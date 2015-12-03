@@ -30,5 +30,5 @@ RUN mv /opt/xdebug.ini /etc/php5/mods-available/xdebug.ini
 RUN sed -i 's/zend_extension=.*/zend_extension=\/usr\/lib\/php5\/20121212\/xdebug.so/' /etc/php5/mods-available/xdebug.ini
 
 # Install Drush 8.x for Drupal 8
-RUN composer global require drush/drush:dev-master
+RUN composer global require drush/drush:7.*
 RUN composer global update
