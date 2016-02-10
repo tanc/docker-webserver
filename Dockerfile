@@ -3,7 +3,7 @@ FROM agilecollective/webserver:BASE
 MAINTAINER Agile Collective <info@agile.coop>
 
 # Adding https://launchpad.net/~ondrej/+archive/ubuntu/php5 PPA repo for php5.6
-RUN echo "deb http://ppa.launchpad.net/ondrej/php5-oldstable/ubuntu precise main " >> /etc/apt/sources.list
+RUN echo "deb http://ppa.launchpad.net/ondrej/php5-5.6/ubuntu precise main " >> /etc/apt/sources.list
 
 # Tell DPKG to keep the old config file to prevent installation error "Modified (by you or by a script) since installation."
 RUN echo "Dpkg::Options { \"--force-confdef\"; \"--force-confold\"; }" >> /etc/apt/apt.conf.d/local && \

@@ -1,3 +1,0 @@
-<VirtualHost *:80>
-    Include sites-available/includes/host.conf
-</VirtualHost>
